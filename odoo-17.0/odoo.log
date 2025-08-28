@@ -2620,3 +2620,333 @@ ModuleNotFoundError: No module named 'stdnum'
 2025-08-28 00:27:41,981 44311 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:27:41] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 13 0.012 0.220
 2025-08-28 00:27:42,065 44311 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:27:42] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 3 0.002 0.004
 2025-08-28 00:27:42,384 44311 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-28 00:56:16,536 51475 INFO ? odoo: Odoo version 17.0 
+2025-08-28 00:56:16,537 51475 INFO ? odoo: Using configuration file at /home/ram/Documents/odoo/OneFarmer/odoo-17.0/odoo.conf 
+2025-08-28 00:56:16,537 51475 INFO ? odoo: addons paths: ['/home/ram/Documents/odoo/OneFarmer/odoo-17.0/odoo/addons', '/home/ram/.local/share/Odoo/addons/17.0', '/home/ram/Documents/odoo/OneFarmer/odoo-17.0/addons'] 
+2025-08-28 00:56:16,537 51475 INFO ? odoo: database: default@default:default 
+2025-08-28 00:56:16,661 51475 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-08-28 00:56:16,812 51475 WARNING ? odoo.service.server: 'inotify' module not installed. Code autoreload feature is disabled 
+2025-08-28 00:56:16,814 51475 INFO ? odoo.service.server: HTTP service (werkzeug) running on ram-Latitude-E6420:8069 
+2025-08-28 00:56:16,825 51475 INFO odoo_demo odoo.modules.loading: loading 1 modules... 
+2025-08-28 00:56:16,835 51475 INFO odoo_demo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-08-28 00:56:16,886 51475 INFO odoo_demo odoo.modules.loading: loading 24 modules... 
+2025-08-28 00:56:17,043 51475 INFO odoo_demo odoo.modules.loading: 24 modules loaded in 0.16s, 0 queries (+0 extra) 
+2025-08-28 00:56:17,111 51475 INFO odoo_demo odoo.modules.loading: Modules loaded. 
+2025-08-28 00:56:17,116 51475 INFO odoo_demo odoo.modules.registry: Registry loaded in 0.302s 
+2025-08-28 00:56:23,140 51475 INFO odoo_demo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-28 00:56:23,171 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "GET / HTTP/1.1" 303 - 7 0.009 0.026
+2025-08-28 00:56:23,249 51475 ERROR odoo_demo odoo.addons.base.models.ir_model: Missing model privacy.log 
+2025-08-28 00:56:23,457 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 00:56:23,458 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 00:56:23,459 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 00:56:23,464 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "GET /web HTTP/1.1" 200 - 88 0.063 0.180
+2025-08-28 00:56:23,781 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.007 0.028
+2025-08-28 00:56:23,808 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 22 0.037 0.028
+2025-08-28 00:56:23,882 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "POST /mail/init_messaging HTTP/1.1" 200 - 71 0.095 0.049
+2025-08-28 00:56:23,933 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.004
+2025-08-28 00:56:23,942 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:23] "POST /mail/load_message_failures HTTP/1.1" 200 - 4 0.002 0.005
+2025-08-28 00:56:24,282 51475 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-28 00:56:24,662 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:24] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 5 0.006 0.917
+2025-08-28 00:56:24,669 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:24] "POST /web/action/load HTTP/1.1" 200 - 6 0.007 0.920
+2025-08-28 00:56:25,168 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:25] "POST /mail/inbox/messages HTTP/1.1" 200 - 11 0.026 0.011
+2025-08-28 00:56:25,174 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:25] "GET /discuss/channel/1/avatar_128?unique=2bbc6dc09e2c33fbbcf2ba52d3c9c239b378823671a8a672cc018f05b83540105cb5e8d9dda78e9ae2d4891330b6a953847b11bc4f98ba61f73beddaac09ec95 HTTP/1.1" 200 - 12 0.014 0.029
+2025-08-28 00:56:28,964 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:28] "GET / HTTP/1.1" 303 - 1 0.001 0.004
+2025-08-28 00:56:29,020 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:29] "GET /web HTTP/1.1" 303 - 1 0.001 0.003
+2025-08-28 00:56:29,211 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:56:29,212 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:56:29,279 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:56:29,281 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:56:29,282 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:56:29,421 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:29] "GET /web/login HTTP/1.1" 200 - 53 0.045 0.230
+2025-08-28 00:56:29,486 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:29] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.003 0.004
+2025-08-28 00:56:29,660 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:29] "GET / HTTP/1.1" 303 - 1 0.001 0.016
+2025-08-28 00:56:30,769 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:30] "GET /web HTTP/1.1" 303 - 1 0.003 0.037
+2025-08-28 00:56:30,844 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/80d15b9/web.assets_frontend.min.css (id:204) 
+2025-08-28 00:56:30,846 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Deleting attachments [190] (matching /web/assets/_______/web.assets_frontend.min.css) because it was replaced with /web/assets/80d15b9/web.assets_frontend.min.css 
+2025-08-28 00:56:30,918 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:30] "GET /web/assets/80d15b9/web.assets_frontend.min.css HTTP/1.1" 200 - 25 0.067 1.353
+2025-08-28 00:56:31,236 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:56:31,237 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:56:31,271 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:56:31,272 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:56:31,273 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:56:31,365 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:31] "GET /web/login HTTP/1.1" 200 - 46 0.023 0.136
+2025-08-28 00:56:31,411 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:31] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.004
+2025-08-28 00:56:31,422 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:31] "GET /web/assets/80d15b9/web.assets_frontend.min.css HTTP/1.1" 200 - 4 0.002 0.006
+2025-08-28 00:56:32,295 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/5aab9ce/web.assets_frontend_lazy.min.js (id:205) 
+2025-08-28 00:56:32,296 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Deleting attachments [191] (matching /web/assets/_______/web.assets_frontend_lazy.min.js) because it was replaced with /web/assets/5aab9ce/web.assets_frontend_lazy.min.js 
+2025-08-28 00:56:32,359 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:32] "GET /web/assets/5aab9ce/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 22 0.014 0.539
+2025-08-28 00:56:33,585 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:33] "GET /website/translations/70caf1c55c12d7d2afb4bfb1b9b647dc4680dff3 HTTP/1.1" 200 - 11 0.006 0.007
+2025-08-28 00:56:44,329 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login failed for db:odoo_demo login:ram from 192.168.0.61 
+2025-08-28 00:56:44,353 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:56:44,354 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:56:44,397 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:56:44,398 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:56:44,399 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:56:44,496 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:44] "POST /web/login HTTP/1.1" 200 - 49 0.033 0.144
+2025-08-28 00:56:44,732 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:44] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.003 0.005
+2025-08-28 00:56:45,637 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:56:45] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 2 0.002 0.004
+2025-08-28 00:57:20,027 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web/session/logout HTTP/1.1" 303 - 3 0.003 0.056
+2025-08-28 00:57:20,141 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web HTTP/1.1" 303 - 1 0.001 0.003
+2025-08-28 00:57:20,193 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:57:20,194 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:57:20,232 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:20,233 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:20,234 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:20,348 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web/login HTTP/1.1" 200 - 46 0.026 0.160
+2025-08-28 00:57:20,395 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web/assets/80d15b9/web.assets_frontend.min.css HTTP/1.1" 200 - 4 0.003 0.006
+2025-08-28 00:57:20,403 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.003 0.008
+2025-08-28 00:57:20,643 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:20] "GET /web/assets/5aab9ce/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 4 0.002 0.006
+2025-08-28 00:57:21,206 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:21] "GET /website/translations/70caf1c55c12d7d2afb4bfb1b9b647dc4680dff3 HTTP/1.1" 200 - 8 0.009 0.006
+2025-08-28 00:57:25,432 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login failed for db:odoo_demo login:sairammakkapati@outlook.com from 192.168.0.61 
+2025-08-28 00:57:25,456 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:57:25,457 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:57:25,502 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:25,504 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:25,504 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:25,606 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:25] "POST /web/login HTTP/1.1" 200 - 47 0.041 0.141
+2025-08-28 00:57:25,645 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:25] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.004
+2025-08-28 00:57:30,651 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login failed for db:odoo_demo login:sairammakkapati@outlook.com from 192.168.0.61 
+2025-08-28 00:57:30,676 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 00:57:30,677 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 00:57:30,719 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:30,721 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:30,721 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:30,820 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:30] "POST /web/login HTTP/1.1" 200 - 47 0.034 0.143
+2025-08-28 00:57:31,074 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:31] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.003 0.004
+2025-08-28 00:57:39,549 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 397. Replace by @t-out 
+2025-08-28 00:57:39,554 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 397. Replace by @t-out 
+2025-08-28 00:57:39,600 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:39,603 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:39,603 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:39,708 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:39] "GET /web/reset_password HTTP/1.1" 200 - 48 0.040 0.145
+2025-08-28 00:57:39,745 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:39] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.003 0.005
+2025-08-28 00:57:42,716 51475 INFO odoo_demo odoo.addons.auth_signup.controllers.main: Password reset attempt for <sairammakkapati@outlook.com> by user <public> from 192.168.0.61 
+2025-08-28 00:57:42,735 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 397. Replace by @t-out 
+2025-08-28 00:57:42,740 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 397. Replace by @t-out 
+2025-08-28 00:57:42,785 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:42,786 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:42,787 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:42,894 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:42] "POST /web/reset_password HTTP/1.1" 200 - 51 0.036 0.154
+2025-08-28 00:57:43,172 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:43] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.003 0.004
+2025-08-28 00:57:46,735 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 397. Replace by @t-out 
+2025-08-28 00:57:46,740 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 397. Replace by @t-out 
+2025-08-28 00:57:46,783 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:46,785 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:46,786 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:46,894 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:46] "GET /web/reset_password HTTP/1.1" 200 - 48 0.041 0.142
+2025-08-28 00:57:51,209 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 396. Replace by @t-out 
+2025-08-28 00:57:51,251 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 00:57:51,252 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 00:57:51,253 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 00:57:51,349 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:51] "GET /web/signup HTTP/1.1" 200 - 53 0.019 0.138
+2025-08-28 00:57:51,443 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:57:51] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.003
+2025-08-28 00:59:46,786 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login successful for db:odoo_demo login:admin from 192.168.0.61 
+2025-08-28 00:59:46,820 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:46] "POST /web/login HTTP/1.1" 303 - 37 0.053 0.758
+2025-08-28 00:59:47,086 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 00:59:47,087 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 00:59:47,088 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 00:59:47,092 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web HTTP/1.1" 200 - 42 0.035 0.142
+2025-08-28 00:59:47,147 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web/webclient/load_menus/8e80ea35310de4f719337cda43bbcbc7843f3556b217b0d064172c82fb891e6e HTTP/1.1" 200 - 1 0.002 0.006
+2025-08-28 00:59:47,158 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 14 0.016 0.010
+2025-08-28 00:59:47,165 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web/webclient/translations/ce712140b02a84ff3af56db21900f6deea507f78?lang=en_US HTTP/1.1" 200 - 4 0.010 0.015
+2025-08-28 00:59:47,216 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web/assets/332a445/web.assets_web.min.css HTTP/1.1" 200 - 3 0.004 0.068
+2025-08-28 00:59:47,225 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:47] "GET /web/assets/b41e6bd/web.assets_web.min.js HTTP/1.1" 200 - 3 0.002 0.075
+2025-08-28 00:59:48,758 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.005
+2025-08-28 00:59:48,769 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.005 0.022
+2025-08-28 00:59:48,772 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.011 0.016
+2025-08-28 00:59:48,788 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "POST /web/action/load HTTP/1.1" 200 - 6 0.012 0.026
+2025-08-28 00:59:48,819 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 22 0.033 0.038
+2025-08-28 00:59:48,859 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "POST /mail/init_messaging HTTP/1.1" 200 - 63 0.075 0.049
+2025-08-28 00:59:48,880 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.004
+2025-08-28 00:59:48,905 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.004 0.005
+2025-08-28 00:59:48,931 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "POST /mail/inbox/messages HTTP/1.1" 200 - 10 0.016 0.010
+2025-08-28 00:59:48,932 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:48] "GET /discuss/channel/1/avatar_128?unique=2bbc6dc09e2c33fbbcf2ba52d3c9c239b378823671a8a672cc018f05b83540105cb5e8d9dda78e9ae2d4891330b6a953847b11bc4f98ba61f73beddaac09ec95 HTTP/1.1" 200 - 12 0.014 0.016
+2025-08-28 00:59:52,626 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:52] "GET /web/image?field=avatar_128&id=2&model=res.partner&unique=2025-08-28%2000:20:46 HTTP/1.1" 200 - 20 0.027 0.037
+2025-08-28 00:59:52,646 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 00:59:52] "POST /web/dataset/call_kw/discuss.channel/channel_fetch_preview HTTP/1.1" 200 - 37 0.054 0.038
+2025-08-28 01:00:09,343 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:09] "POST /web/action/load HTTP/1.1" 200 - 9 0.011 0.011
+2025-08-28 01:00:09,516 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:09] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 52 0.054 0.075
+2025-08-28 01:00:09,567 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-08-28 01:00:09,710 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:09] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 8 0.023 0.096
+2025-08-28 01:00:09,750 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:09] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 62 0.108 0.065
+2025-08-28 01:00:11,303 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 60 0.095 0.045
+2025-08-28 01:00:11,310 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 11 0.023 0.118
+2025-08-28 01:00:13,143 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:13] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 60 0.118 0.051
+2025-08-28 01:00:13,188 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:13] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.003
+2025-08-28 01:00:13,241 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:13] "GET /web/static/img/empty_folder.svg HTTP/1.1" 200 - 0 0.000 0.002
+2025-08-28 01:00:17,072 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:17] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.010 0.004
+2025-08-28 01:00:18,268 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:18] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.012 0.005
+2025-08-28 01:00:18,274 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:00:18] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.006
+2025-08-28 01:01:27,556 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:27] "POST /web/dataset/call_kw/res.users/action_get HTTP/1.1" 200 - 9 0.007 0.010
+2025-08-28 01:01:27,698 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:27] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 32 0.033 0.072
+2025-08-28 01:01:27,822 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:27] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 11 0.007 0.027
+2025-08-28 01:01:28,077 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:28] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US HTTP/1.1" 200 - 7 0.003 0.023
+2025-08-28 01:01:28,616 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/e75cfbc/web_editor.backend_assets_wysiwyg.min.css (id:206) 
+2025-08-28 01:01:28,704 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:28] "GET /web/assets/e75cfbc/web_editor.backend_assets_wysiwyg.min.css HTTP/1.1" 200 - 14 0.029 0.570
+2025-08-28 01:01:28,742 51475 INFO odoo_demo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/1b0fcc2/web_editor.backend_assets_wysiwyg.min.js (id:207) 
+2025-08-28 01:01:28,751 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:28] "GET /web/assets/1b0fcc2/web_editor.backend_assets_wysiwyg.min.js HTTP/1.1" 200 - 14 0.010 0.626
+2025-08-28 01:01:29,051 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:29] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 9 0.008 0.042
+2025-08-28 01:01:29,270 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:29] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756342887862 HTTP/1.1" 200 - 22 0.028 0.024
+2025-08-28 01:01:32,800 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.003
+2025-08-28 01:01:32,906 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:32] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 8 0.013 0.085
+2025-08-28 01:01:32,942 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 60 0.093 0.042
+2025-08-28 01:01:34,112 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-08-28 01:01:34,200 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:34] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 8 0.014 0.068
+2025-08-28 01:01:34,246 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:34] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 60 0.089 0.042
+2025-08-28 01:01:35,585 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:35] "POST /web/action/load HTTP/1.1" 200 - 8 0.004 0.008
+2025-08-28 01:01:35,710 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:35] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 25 0.022 0.059
+2025-08-28 01:01:35,908 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:35] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 45 0.037 0.030
+2025-08-28 01:01:36,072 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:36] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-08-28 01:01:36,086 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:36] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 200 - 0 0.000 0.004
+2025-08-28 01:01:36,094 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:36] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.005 0.007
+2025-08-28 01:01:36,103 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:36] "POST /base_setup/data HTTP/1.1" 200 - 6 0.005 0.005
+2025-08-28 01:01:36,212 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:36] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-08-28 01:01:47,946 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:47] "POST /web/dataset/call_kw/res.users/action_get HTTP/1.1" 200 - 8 0.008 0.011
+2025-08-28 01:01:48,009 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:48] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 11 0.010 0.021
+2025-08-28 01:01:48,164 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:48] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756342908040 HTTP/1.1" 200 - 22 0.030 0.027
+2025-08-28 01:01:59,334 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:01:59] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 28 0.027 0.039
+2025-08-28 01:02:01,400 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:01] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 53 0.064 0.126
+2025-08-28 01:02:01,550 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:01] "POST /web/dataset/call_button HTTP/1.1" 200 - 4 0.005 0.030
+2025-08-28 01:02:01,599 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:01] "POST /web/dataset/call_kw/res.users.identitycheck/get_views HTTP/1.1" 200 - 7 0.007 0.011
+2025-08-28 01:02:01,653 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:01] "POST /web/dataset/call_kw/res.users.identitycheck/web_read HTTP/1.1" 200 - 7 0.007 0.007
+2025-08-28 01:02:08,650 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:08] "POST /web/dataset/call_kw/res.users.identitycheck/web_save HTTP/1.1" 200 - 10 0.011 0.071
+2025-08-28 01:02:09,483 51475 WARNING odoo_demo odoo.http: Incorrect Password, try again or click on Forgot Password to reset your password. 
+2025-08-28 01:02:09,483 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:09] "POST /web/dataset/call_button HTTP/1.1" 200 - 10 0.011 0.803
+2025-08-28 01:02:17,125 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:17] "POST /web/dataset/call_kw/res.users.identitycheck/web_save HTTP/1.1" 200 - 9 0.005 0.031
+2025-08-28 01:02:18,124 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:18] "POST /web/dataset/call_button HTTP/1.1" 200 - 12 0.012 0.876
+2025-08-28 01:02:18,179 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:18] "POST /web/dataset/call_kw/change.password.own/get_views HTTP/1.1" 200 - 7 0.008 0.015
+2025-08-28 01:02:18,296 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:18] "POST /web/dataset/call_kw/change.password.own/onchange HTTP/1.1" 200 - 2 0.003 0.004
+2025-08-28 01:02:29,124 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:29] "POST /web/dataset/call_kw/change.password.own/web_save HTTP/1.1" 200 - 8 0.011 0.071
+2025-08-28 01:02:29,175 51475 INFO odoo_demo odoo.addons.base.models.res_users: Password change for 'admin' (#2) by 'admin' (#2) from 192.168.0.61 
+2025-08-28 01:02:30,077 51475 INFO odoo_demo odoo.models.unlink: User #2 deleted change.password.own records with IDs: [1] 
+2025-08-28 01:02:30,132 51475 INFO odoo_demo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-08-28 01:02:30,135 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:30] "POST /web/dataset/call_button HTTP/1.1" 200 - 51 0.059 0.919
+2025-08-28 01:02:30,220 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:30] "GET /web?reload=true HTTP/1.1" 303 - 4 0.003 0.006
+2025-08-28 01:02:30,570 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 01:02:30,571 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 01:02:30,603 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 01:02:30,605 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 01:02:30,605 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 01:02:30,717 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:30] "GET /web/login?reload=true HTTP/1.1" 200 - 58 0.035 0.131
+2025-08-28 01:02:30,863 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:30] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.002 0.005
+2025-08-28 01:02:43,324 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login successful for db:odoo_demo login:admin from 192.168.0.61 
+2025-08-28 01:02:43,361 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:43] "POST /web/login HTTP/1.1" 303 - 44 0.054 0.900
+2025-08-28 01:02:43,478 51475 ERROR odoo_demo odoo.addons.base.models.ir_model: Missing model privacy.log 
+2025-08-28 01:02:43,727 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 01:02:43,728 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 01:02:43,729 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 01:02:43,734 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:43] "GET /web HTTP/1.1" 200 - 77 0.075 0.202
+2025-08-28 01:02:43,797 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 14 0.020 0.011
+2025-08-28 01:02:43,989 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:43] "POST /web/action/load HTTP/1.1" 200 - 8 0.014 0.011
+2025-08-28 01:02:43,996 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:43] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 5 0.010 0.012
+2025-08-28 01:02:44,052 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 22 0.039 0.036
+2025-08-28 01:02:44,112 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /mail/init_messaging HTTP/1.1" 200 - 71 0.087 0.054
+2025-08-28 01:02:44,148 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 29 0.024 0.100
+2025-08-28 01:02:44,190 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.002 0.004
+2025-08-28 01:02:44,282 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 46 0.039 0.024
+2025-08-28 01:02:44,358 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.006 0.004
+2025-08-28 01:02:44,365 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:44] "POST /base_setup/data HTTP/1.1" 200 - 6 0.005 0.004
+2025-08-28 01:02:53,503 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:53] "POST /web/dataset/call_kw/res.users/action_get HTTP/1.1" 200 - 9 0.008 0.011
+2025-08-28 01:02:53,660 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:53] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 31 0.033 0.070
+2025-08-28 01:02:53,735 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:53] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 11 0.009 0.021
+2025-08-28 01:02:53,850 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:53] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US HTTP/1.1" 200 - 7 0.004 0.028
+2025-08-28 01:02:54,070 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:54] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 9 0.010 0.034
+2025-08-28 01:02:54,239 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:02:54] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756342973796 HTTP/1.1" 200 - 22 0.032 0.029
+2025-08-28 01:03:02,550 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:02] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 28 0.024 0.044
+2025-08-28 01:03:02,630 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:02] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 27 0.013 0.029
+2025-08-28 01:03:21,306 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:21] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 25 0.025 0.100
+2025-08-28 01:03:21,381 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:21] "POST /web/dataset/call_button HTTP/1.1" 200 - 1 0.001 0.004
+2025-08-28 01:03:21,550 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:21] "POST /web/session/get_session_info HTTP/1.1" 200 - 16 0.018 0.020
+2025-08-28 01:03:21,895 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 01:03:21,896 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 01:03:21,897 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 01:03:21,901 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:21] "GET /web?reload=true HTTP/1.1" 200 - 42 0.040 0.139
+2025-08-28 01:03:22,067 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 13 0.021 0.010
+2025-08-28 01:03:22,111 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /web/action/load HTTP/1.1" 200 - 8 0.008 0.011
+2025-08-28 01:03:22,126 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 4 0.004 0.013
+2025-08-28 01:03:22,171 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 22 0.024 0.027
+2025-08-28 01:03:22,233 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /mail/init_messaging HTTP/1.1" 200 - 63 0.079 0.058
+2025-08-28 01:03:22,266 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.002 0.007
+2025-08-28 01:03:22,299 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 6 0.008 0.044
+2025-08-28 01:03:22,489 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 19 0.023 0.021
+2025-08-28 01:03:22,657 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.004 0.004
+2025-08-28 01:03:22,662 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:03:22] "POST /base_setup/data HTTP/1.1" 200 - 5 0.002 0.003
+2025-08-28 01:04:00,797 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:00] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 45 0.047 0.055
+2025-08-28 01:04:00,948 51475 INFO odoo_demo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-08-28 01:04:00,950 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:00] "POST /web/dataset/call_button HTTP/1.1" 200 - 41 0.035 0.039
+2025-08-28 01:04:01,080 51475 ERROR odoo_demo odoo.addons.base.models.ir_model: Missing model privacy.log 
+2025-08-28 01:04:01,255 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 01:04:01,256 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 01:04:01,257 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 01:04:01,262 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "GET /web HTTP/1.1" 200 - 92 0.038 0.166
+2025-08-28 01:04:01,324 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 14 0.013 0.010
+2025-08-28 01:04:01,443 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /web/action/load HTTP/1.1" 200 - 9 0.009 0.013
+2025-08-28 01:04:01,466 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 5 0.010 0.007
+2025-08-28 01:04:01,529 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 22 0.033 0.037
+2025-08-28 01:04:01,568 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /mail/init_messaging HTTP/1.1" 200 - 70 0.084 0.056
+2025-08-28 01:04:01,648 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.002 0.006
+2025-08-28 01:04:01,686 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 30 0.020 0.069
+2025-08-28 01:04:01,873 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:01] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 42 0.040 0.029
+2025-08-28 01:04:02,096 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:02] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.007 0.004
+2025-08-28 01:04:02,114 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:02] "POST /base_setup/data HTTP/1.1" 200 - 6 0.005 0.005
+2025-08-28 01:04:04,731 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:04] "POST /web/dataset/call_kw/res.config.settings/web_save HTTP/1.1" 200 - 42 0.051 0.093
+2025-08-28 01:04:04,864 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:04] "POST /web/action/load HTTP/1.1" 200 - 11 0.012 0.015
+2025-08-28 01:04:05,146 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:05] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 77 0.060 0.151
+2025-08-28 01:04:05,347 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:05] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.005
+2025-08-28 01:04:05,360 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:05] "POST /web/dataset/call_kw/res.users/web_search_read HTTP/1.1" 200 - 19 0.021 0.017
+2025-08-28 01:04:08,392 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:08] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 46 0.064 0.064
+2025-08-28 01:04:14,787 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:14] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US HTTP/1.1" 200 - 7 0.005 0.029
+2025-08-28 01:04:14,894 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:14] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 9 0.010 0.032
+2025-08-28 01:04:25,388 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:25] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 51 0.064 0.104
+2025-08-28 01:04:28,933 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:28] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 47 0.056 0.061
+2025-08-28 01:04:34,672 51475 INFO odoo_demo odoo.modules.registry: Caches invalidated, signaling through the database: ['default'] 
+2025-08-28 01:04:34,674 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:34] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 105 0.125 0.249
+2025-08-28 01:04:34,738 51475 INFO odoo_demo odoo.http: Session expired 
+2025-08-28 01:04:34,739 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:34] "POST /web/dataset/call_button HTTP/1.1" 200 - 3 0.003 0.005
+2025-08-28 01:04:34,793 51475 INFO odoo_demo odoo.addons.base.models.ir_rule: Access Denied by record rules for operation: read on record ids: [2], uid: 4, model: res.users 
+2025-08-28 01:04:34,835 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:34] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756343074711 HTTP/1.1" 200 - 34 0.032 0.067
+2025-08-28 01:04:36,687 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web HTTP/1.1" 303 - 1 0.001 0.003
+2025-08-28 01:04:36,753 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='error' in template 185. Replace by @t-out 
+2025-08-28 01:04:36,754 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='message' in template 185. Replace by @t-out 
+2025-08-28 01:04:36,805 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 181. Replace by @t-out 
+2025-08-28 01:04:36,807 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 181. Replace by @t-out 
+2025-08-28 01:04:36,807 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 181. Replace by @t-out 
+2025-08-28 01:04:36,926 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web/login HTTP/1.1" 200 - 56 0.049 0.158
+2025-08-28 01:04:36,975 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web/assets/d811fb3/web.assets_frontend_minimal.min.js HTTP/1.1" 304 - 4 0.004 0.009
+2025-08-28 01:04:36,976 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.003
+2025-08-28 01:04:36,981 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.003 0.009
+2025-08-28 01:04:36,995 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:36] "GET /web/assets/80d15b9/web.assets_frontend.min.css HTTP/1.1" 304 - 4 0.003 0.009
+2025-08-28 01:04:45,238 51475 INFO odoo_demo odoo.addons.base.models.res_users: Login successful for db:odoo_demo login:Ram from 192.168.0.61 
+2025-08-28 01:04:45,273 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:45] "POST /web/login HTTP/1.1" 303 - 42 0.049 0.886
+2025-08-28 01:04:45,340 51475 ERROR odoo_demo odoo.addons.base.models.ir_model: Missing model privacy.log 
+2025-08-28 01:04:45,591 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc="title or 'Odoo'" in template 180. Replace by @t-out 
+2025-08-28 01:04:45,592 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='request.csrf_token(None)' in template 180. Replace by @t-out 
+2025-08-28 01:04:45,593 51475 WARNING odoo_demo odoo.addons.base.models.ir_qweb: Found deprecated directive @t-esc='debug' in template 180. Replace by @t-out 
+2025-08-28 01:04:45,598 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:45] "GET /web HTTP/1.1" 200 - 74 0.082 0.207
+2025-08-28 01:04:45,656 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:45] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 14 0.017 0.009
+2025-08-28 01:04:45,990 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:45] "POST /web/action/load HTTP/1.1" 200 - 11 0.012 0.016
+2025-08-28 01:04:45,999 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:45] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 5 0.004 0.010
+2025-08-28 01:04:46,079 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 22 0.037 0.046
+2025-08-28 01:04:46,167 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "POST /mail/init_messaging HTTP/1.1" 200 - 71 0.125 0.072
+2025-08-28 01:04:46,220 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.004 0.013
+2025-08-28 01:04:46,374 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "POST /web/dataset/call_kw/res.users/get_views HTTP/1.1" 200 - 81 0.118 0.233
+2025-08-28 01:04:46,856 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 46 0.066 0.077
+2025-08-28 01:04:46,994 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:04:46] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756343086910 HTTP/1.1" 200 - 22 0.031 0.023
+2025-08-28 01:05:05,861 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:05] "POST /web/dataset/call_kw/res.users/onchange HTTP/1.1" 200 - 50 0.068 3.314
+2025-08-28 01:05:10,346 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:10] "POST /web/dataset/call_kw/res.users/web_save HTTP/1.1" 200 - 66 0.063 4.198
+2025-08-28 01:05:10,574 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:10] "GET /web/image?model=res.users&id=2&field=avatar_128&unique=1756343110406 HTTP/1.1" 200 - 22 0.043 0.039
+2025-08-28 01:05:10,639 51475 INFO odoo_demo odoo.addons.auth_signup.models.res_users: Password reset email sent for user <Ram> to <sairammakkapati@outlook.com> 
+2025-08-28 01:05:10,704 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:10] "POST /web/dataset/call_button HTTP/1.1" 200 - 64 0.076 0.185
+2025-08-28 01:05:11,145 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:11] "POST /web/dataset/call_kw/res.users/web_read HTTP/1.1" 200 - 51 0.044 0.081
+2025-08-28 01:05:12,573 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:12] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US HTTP/1.1" 200 - 7 0.005 0.030
+2025-08-28 01:05:12,676 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:12] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 9 0.009 0.027
+2025-08-28 01:05:20,115 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:20] "POST /web/action/load HTTP/1.1" 200 - 6 0.006 0.008
+2025-08-28 01:05:20,270 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:20] "POST /mail/inbox/messages HTTP/1.1" 200 - 10 0.021 0.010
+2025-08-28 01:05:22,585 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:22] "POST /mail/starred/messages HTTP/1.1" 200 - 7 0.013 0.005
+2025-08-28 01:05:23,362 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:23] "POST /mail/history/messages HTTP/1.1" 200 - 10 0.019 0.007
+2025-08-28 01:05:23,405 51475 INFO ? werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:23] "GET /web/static/img/neutral_face.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-08-28 01:05:24,980 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:24] "GET /discuss/channel/1/partner/3/avatar_128?unique=2025-08-28%2001:04:34 HTTP/1.1" 200 - 18 0.027 0.023
+2025-08-28 01:05:25,061 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:25] "POST /discuss/channel/messages HTTP/1.1" 200 - 41 0.056 0.063
+2025-08-28 01:05:25,219 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:25] "GET /discuss/channel/1/partner/7/avatar_128 HTTP/1.1" 200 - 19 0.045 0.030
+2025-08-28 01:05:25,236 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:25] "GET /discuss/channel/1/partner/2/avatar_128?unique=2025-08-28%2000:20:46 HTTP/1.1" 200 - 31 0.061 0.033
+2025-08-28 01:05:25,285 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:25] "POST /discuss/channel/set_last_seen_message HTTP/1.1" 200 - 35 0.064 0.096
+2025-08-28 01:05:27,390 51475 INFO odoo_demo werkzeug: 192.168.0.61 - - [28/Aug/2025 01:05:27] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.004
