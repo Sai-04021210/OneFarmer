@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Plant Monitor Tree View -->
+    <record id="view_plant_monitor_tree" model="ir.ui.view">
+        <field name="name">plant.monitor.tree</field>
+        <field name="model">plant.monitor</field>
+        <field name="arch" type="xml">
+            <tree string="Plant Monitor" decoration-success="health_status=='excellent'" 
+                  decoration-warning="health_status=='fair'" decoration-danger="health_status in ['poor','critical']">
+                <field name="name"/>
+                <field name="plant_type"/>
+                <field name="location"/>
+                <field name="planting_date"/>
+                <field name="status"/>
+                <field name="health_status"/>
+                <field name="height"/>
+                <field name="last_watered"/>
+                <field name="log_count"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Plant Monitor Form View -->
+    <record id="view_plant_monitor_form" model="ir.ui.view">
+        <field name="name">plant.monitor.form</field>
+        <field name="model">plant.monitor</field>
+        <field name="arch" type="xml">
+            <form string="Plant Monitor">
+                <header>
+                    <field name="status" widget="statusbar" statusbar_visible="seedling,growing,flowering,fruiting,mature,harvested"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_monitoring_logs" type="object" class="oe_stat_button" icon="fa-list-alt">
+                            <field name="log_count" widget="statbutton" string="Logs"/>
+                        </button>
+                    </div>
+                    
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Plant Name"/>
+                        </h1>
+                        <h3>
+                            <field name="scientific_name" placeholder="Scientific Name"/>
+                        </h3>
+                    </div>
+                    
+                    <group>
+                        <group name="basic_info" string="Basic Information">
+                            <field name="plant_type"/>
+                            <field name="health_status"/>
+                            <field name="planting_date"/>
+                            <field name="expected_harvest_date"/>
+                            <field name="actual_harvest_date"/>
+                        </group>
+                        <group name="location_info" string="Location">
+                            <field name="location"/>
+                            <field name="plot_number"/>
+                            <field name="coordinates"/>
+                        </group>
+                    </group>
+                    
+                    <group>
+                        <group name="measurements" string="Current Measurements">
+                            <field name="height"/>
+                            <field name="width"/>
+                        </group>
+                        <group name="care_info" string="Care Information">
+                            <field name="watering_frequency"/>
+                            <field name="last_watered"/>
+                            <field name="last_fertilized"/>
+                        </group>
+                    </group>
+                    
+                    <notebook>
+                        <page string="Observations" name="observations">
+                            <group>
+                                <field name="observations" nolabel="1" placeholder="Recent observations about the plant..."/>
+                            </group>
+                        </page>
+                        <page string="Notes" name="notes">
+                            <group>
+                                <field name="notes" nolabel="1" placeholder="General notes about the plant..."/>
+                            </group>
+                        </page>
+                        <page string="Monitoring Logs" name="logs">
+                            <field name="monitoring_logs">
+                                <tree string="Monitoring Logs" editable="bottom">
+                                    <field name="log_date"/>
+                                    <field name="temperature"/>
+                                    <field name="humidity"/>
+                                    <field name="soil_moisture"/>
+                                    <field name="height"/>
+                                    <field name="health_status"/>
+                                    <field name="watered"/>
+                                    <field name="fertilized"/>
+                                    <field name="notes"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Plant Monitor Kanban View -->
+    <record id="view_plant_monitor_kanban" model="ir.ui.view">
+        <field name="name">plant.monitor.kanban</field>
+        <field name="model">plant.monitor</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="status" class="o_kanban_small_column">
+                <field name="name"/>
+                <field name="plant_type"/>
+                <field name="health_status"/>
+                <field name="status"/>
+                <field name="location"/>
+                <field name="height"/>
+                <field name="planting_date"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                            <div class="o_kanban_card_header">
+                                <div class="o_kanban_card_header_title">
+                                    <div class="o_primary"><strong><field name="name"/></strong></div>
+                                    <div class="o_secondary"><field name="plant_type"/></div>
+                                </div>
+                            </div>
+                            <div class="o_kanban_card_content">
+                                <div class="o_kanban_card_manage_pane">
+                                    <div>Location: <field name="location"/></div>
+                                    <div>Health: <field name="health_status"/></div>
+                                    <div>Height: <field name="height"/> cm</div>
+                                    <div>Planted: <field name="planting_date"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Plant Monitoring Log Tree View -->
+    <record id="view_plant_monitoring_log_tree" model="ir.ui.view">
+        <field name="name">plant.monitoring.log.tree</field>
+        <field name="model">plant.monitoring.log</field>
+        <field name="arch" type="xml">
+            <tree string="Monitoring Logs" editable="top">
+                <field name="plant_id"/>
+                <field name="log_date"/>
+                <field name="temperature"/>
+                <field name="humidity"/>
+                <field name="soil_moisture"/>
+                <field name="light_level"/>
+                <field name="height"/>
+                <field name="health_status"/>
+                <field name="watered"/>
+                <field name="fertilized"/>
+                <field name="pest_issues"/>
+                <field name="disease_issues"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Plant Monitoring Log Form View -->
+    <record id="view_plant_monitoring_log_form" model="ir.ui.view">
+        <field name="name">plant.monitoring.log.form</field>
+        <field name="model">plant.monitoring.log</field>
+        <field name="arch" type="xml">
+            <form string="Monitoring Log">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="plant_id"/>
+                            <field name="log_date"/>
+                            <field name="log_time"/>
+                        </group>
+                        <group>
+                            <field name="health_status"/>
+                            <field name="height"/>
+                            <field name="width"/>
+                        </group>
+                    </group>
+                    
+                    <group string="Environmental Data">
+                        <group>
+                            <field name="temperature"/>
+                            <field name="humidity"/>
+                        </group>
+                        <group>
+                            <field name="soil_moisture"/>
+                            <field name="light_level"/>
+                        </group>
+                    </group>
+                    
+                    <group string="Activities">
+                        <group>
+                            <field name="watered"/>
+                            <field name="fertilized"/>
+                        </group>
+                        <group>
+                            <field name="pruned"/>
+                            <field name="pest_issues"/>
+                            <field name="disease_issues"/>
+                        </group>
+                    </group>
+                    
+                    <group string="Photo">
+                        <field name="image" widget="image" class="oe_avatar"/>
+                    </group>
+                    
+                    <group string="Notes">
+                        <field name="notes" nolabel="1" placeholder="Add notes about this monitoring session..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Actions -->
+    <record id="action_plant_monitor" model="ir.actions.act_window">
+        <field name="name">Plant Monitor</field>
+        <field name="res_model">plant.monitor</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first plant to monitor!
+            </p>
+            <p>
+                Track your plants' growth, health, and care activities.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_plant_monitoring_log" model="ir.actions.act_window">
+        <field name="name">Monitoring Logs</field>
+        <field name="res_model">plant.monitoring.log</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_today': 1}</field>
+    </record>
+
+</odoo>

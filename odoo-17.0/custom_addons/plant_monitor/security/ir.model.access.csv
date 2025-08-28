@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_plant_monitor_user,plant.monitor.user,model_plant_monitor,base.group_user,1,1,1,1
+access_plant_monitoring_log_user,plant.monitoring.log.user,model_plant_monitoring_log,base.group_user,1,1,1,1
+access_plant_monitor_manager,plant.monitor.manager,model_plant_monitor,base.group_system,1,1,1,1
+access_plant_monitoring_log_manager,plant.monitoring.log.manager,model_plant_monitoring_log,base.group_system,1,1,1,1

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <!-- Main Menu -->
+    <menuitem id="menu_plant_monitor_root"
+              name="Plant Monitor"
+              web_icon="plant_monitor,static/description/icon.png"
+              sequence="10"/>
+
+    <!-- Sub Menus -->
+    <menuitem id="menu_plant_monitor_main"
+              name="Plants"
+              parent="menu_plant_monitor_root"
+              sequence="10"/>
+
+    <menuitem id="menu_plant_monitor_logs"
+              name="Monitoring Logs"
+              parent="menu_plant_monitor_root"
+              sequence="20"/>
+
+    <menuitem id="menu_plant_monitor_reports"
+              name="Reports"
+              parent="menu_plant_monitor_root"
+              sequence="30"/>
+
+    <!-- Menu Items -->
+    <menuitem id="menu_plant_monitor_plants"
+              name="My Plants"
+              parent="menu_plant_monitor_main"
+              action="action_plant_monitor"
+              sequence="10"/>
+
+    <menuitem id="menu_plant_monitoring_logs"
+              name="All Monitoring Logs"
+              parent="menu_plant_monitor_logs"
+              action="action_plant_monitoring_log"
+              sequence="10"/>
+
+</odoo>
