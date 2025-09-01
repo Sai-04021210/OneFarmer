@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Scheduled Action for Auto-advancing Plant Stages -->
+    <record id="cron_auto_advance_plant_stages" model="ir.cron">
+        <field name="name">Auto-advance Plant Stages</field>
+        <field name="model_id" ref="model_plant_monitor"/>
+        <field name="state">code</field>
+        <field name="code">model.auto_advance_plant_stages()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+</odoo>

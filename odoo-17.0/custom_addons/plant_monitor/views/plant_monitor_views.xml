@@ -9,11 +9,14 @@
                   decoration-warning="health_status=='fair'" decoration-danger="health_status in ['poor','critical']">
                 <field name="name"/>
                 <field name="plant_type"/>
+                <field name="plant_variety"/>
                 <field name="location"/>
                 <field name="planting_date"/>
                 <field name="status"/>
+                <field name="substage"/>
                 <field name="health_status"/>
                 <field name="height"/>
+                <field name="days_to_harvest"/>
                 <field name="last_watered"/>
                 <field name="log_count"/>
             </tree>
@@ -27,7 +30,16 @@
         <field name="arch" type="xml">
             <form string="Plant Monitor">
                 <header>
-                    <field name="status" widget="statusbar" statusbar_visible="seedling,growing,flowering,fruiting,mature,harvested"/>
+                    <button name="advance_to_next_stage" string="Advance Stage" type="object" 
+                            class="btn-primary" invisible="status in ['harvested', 'dead']"/>
+                    <button name="action_set_seedling" string="Set to Seedling" type="object" class="btn-secondary"/>
+                    <button name="action_set_growing" string="Set to Growing" type="object" class="btn-secondary"/>
+                    <button name="action_set_flowering" string="Set to Flowering" type="object" class="btn-secondary"/>
+                    <button name="action_set_fruiting" string="Set to Fruiting" type="object" class="btn-secondary"/>
+                    <button name="action_set_mature" string="Set to Mature" type="object" class="btn-secondary"/>
+                    <button name="action_set_harvested" string="Set to Harvested" type="object" class="btn-secondary"/>
+                    <field name="status" widget="statusbar" statusbar_visible="seed_prep,germination,seedling,transplant,vegetative,flowering,fruiting,ripening,mature,harvested"
+                           options="{'clickable': '1'}"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
@@ -48,6 +60,8 @@
                     <group>
                         <group name="basic_info" string="Basic Information">
                             <field name="plant_type"/>
+                            <field name="plant_variety"/>
+                            <field name="substage"/>
                             <field name="health_status"/>
                             <field name="planting_date"/>
                             <field name="expected_harvest_date"/>
@@ -64,11 +78,40 @@
                         <group name="measurements" string="Current Measurements">
                             <field name="height"/>
                             <field name="width"/>
+                            <field name="days_to_germination"/>
+                            <field name="days_to_transplant"/>
+                            <field name="days_to_flowering"/>
+                            <field name="days_to_harvest"/>
                         </group>
                         <group name="care_info" string="Care Information">
                             <field name="watering_frequency"/>
+                            <field name="watering_amount"/>
+                            <field name="fertilizer_type"/>
+                            <field name="fertilizer_schedule"/>
                             <field name="last_watered"/>
                             <field name="last_fertilized"/>
+                        </group>
+                    </group>
+                    
+                    <group>
+                        <group name="cultivation_info" string="Cultivation Details">
+                            <field name="sowing_medium" invisible="status not in ['seed_prep', 'germination']"/>
+                            <field name="seed_depth" invisible="status not in ['seed_prep', 'germination']"/>
+                            <field name="spacing_between_plants" invisible="status in ['seed_prep', 'germination']"/>
+                            <field name="growing_season"/>
+                        </group>
+                        <group name="environment_info" string="Environmental Conditions">
+                            <field name="soil_temperature" invisible="status in ['mature', 'harvested']"/>
+                            <field name="ambient_temperature"/>
+                            <field name="soil_ph" invisible="status in ['seed_prep', 'germination']"/>
+                        </group>
+                    </group>
+                    
+                    <!-- Stage-specific information -->
+                    <group invisible="status not in ['flowering', 'fruiting', 'ripening', 'mature']">
+                        <group name="harvest_info" string="Harvest Information">
+                            <field name="expected_harvest_date"/>
+                            <field name="actual_harvest_date" invisible="status not in ['mature', 'harvested']"/>
                         </group>
                     </group>
                     

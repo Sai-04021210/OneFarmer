@@ -20,6 +20,7 @@
         'security/ir.model.access.csv',
         'views/plant_monitor_views.xml',
         'views/plant_monitor_menus.xml',
+        'data/cron_jobs.xml',
     ],
     'demo': [],
     'installable': True,
